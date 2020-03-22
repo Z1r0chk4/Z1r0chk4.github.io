@@ -1,0 +1,66 @@
+//custom elements
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: auto;
+  @include MQ(md) {
+    width: 960px;
+  }
+  @include MQ(sm) {
+    width: 720px;
+  }
+  @include MQ(es) {
+    width: 540px;
+  }
+  @include MQ(xs) {
+    width: 100%;
+  }
+}
+
+//section
+
+.section {
+  padding: 50px 0;
+}
+
+//title
+
+.title_custom {
+  font-family: 'Helvetica', serif;
+  @include font(34px, $color-title, 400, normal);
+  text-align: center;
+  &.light {
+    color: $color-white;
+  }
+}
+.subtitle_custom {
+  font-family: 'Roboto', serif;
+  @include font(16px, $color-subtitle, 300, normal);
+  font-style: italic;
+  text-align: center;
+}
+.title_block {
+  font-family: 'Helvetica', serif;
+  @include font(26px, $color-white, 400, normal);
+  text-align: center;
+  &.dark {
+    color: $color-title;
+  }
+}
+.paragraph_custom {
+  font-family: 'Montserrat', sans-serif;
+  @include font(16px, $color-paragraph, 400, normal);
+}
+
+//buttons
+
+.btn_custom {
+  font-family: 'Montserrat', sans-serif;
+  @include font(16px, $color-black, 400, normal);
+  padding: 15px 20px;
+  margin: 30px auto 0;
+  @include border($color-black);
+  width: 180px;
+  text-align: center;
+}

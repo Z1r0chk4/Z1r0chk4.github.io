@@ -1,0 +1,179 @@
+@import "components/mixins";
+@import "components/reset";
+@import "components/colors";
+@import "components/custom";
+
+//menu
+
+.main_menu {
+  @include flex(flex, center, center);
+  .menu_item {
+    margin: 0 5px;
+    &.logo {
+      .menu_link {
+        padding: 20px;
+        background-color: $color-bg;
+        color: $color-white;
+      }
+    }
+  }
+  .menu_link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $color-dark;
+    padding: 15px 20px;
+  }
+}
+
+//header section
+
+.main_header {
+  position: relative;
+  height: 100vh;
+}
+.text_wrap {
+  position: absolute;
+  @include center($xy:xy);
+}
+.main_title {
+  font-family: 'Roboto', sans-serif;
+  @include font(44px, $color-title, 400, normal);
+  text-align: center;
+}
+
+//about section
+
+.section_about {
+  padding-bottom: 200px;
+}
+.about_wrap {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 20px;
+  &:before {
+    @include pseudo();
+    width: 5px;
+    height: 100%;
+    background-color: $color-white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.about_block {
+  width: 420px;
+  position: relative;
+  &:before {
+    @include pseudo();
+    @include size(14px);
+    border: 5px solid $color-white;
+    top: 5px;
+    border-radius: 50%;
+    background-color: $color-bg;
+  }
+  &:nth-child(2n - 1) {
+    &:before {
+      right: -147px;
+      @include MQ(md) {
+        right: -57px;
+      }
+      @include MQ(sm) {
+        right: 720px;
+      }
+      @include MQ(es) {
+        right: 540px;
+      }
+      @include MQ(xs) {
+        right: 100%;
+      }
+    }
+  }
+  &:nth-child(2n) {
+    margin-left: auto;
+    margin-top: -30px;
+    &:before {
+      left: -147px;
+      @include MQ(md) {
+        left: -57px;
+      }
+      @include MQ(sm) {
+        left: 720px;
+      }
+      @include MQ(es) {
+        left: 540px;
+      }
+      @include MQ(xs) {
+        left: 100%;
+      }
+    }
+  }
+}
+
+//skills section
+
+.section_skills {
+  padding-bottom: 100px;
+}
+.skills_wrap {
+  @include flex(flex, space-between, flex-start);
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.skill_block {
+  &:nth-child(2n - 1) {
+    margin-top: 85px;
+  }
+  .img_wrap {
+    @include size(170px);
+    @include flex(flex, center, center);
+    background-color: $color-black;
+    text-align: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    img {
+      @include size(100px);
+    }
+  }
+}
+
+//portfolio section
+
+.section_portfolio {
+  position: relative;
+  padding: 100px 0;
+  &:before {
+    @include pseudo();
+    width: 200%;
+    height: 100%;
+    background-color: $color-bg;
+    top: -80px;
+    left: 50%;
+    transform: rotate(-5deg) translateX(-50%);
+    z-index: -1;
+  }
+}
+.portfolio_wrap {
+  @include flex(flex, center, center);
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.portfolio_block {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  .overlay {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    position: absolute;
+    @include size(100%);
+    top: 0;
+    left: 0;
+  }
+}
+
+//footer
+
+.main_footer {
+  padding: 100px 0 50px;
+  text-align: center;
+}
