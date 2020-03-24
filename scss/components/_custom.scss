@@ -47,6 +47,9 @@
   &.dark {
     color: $color-title;
   }
+  @include MQlite(xm) {
+    font-size: 20px;
+  }
 }
 .paragraph_custom {
   font-family: 'Montserrat', sans-serif;
@@ -63,4 +66,8 @@
   @include border($color-black);
   width: 180px;
   text-align: center;
+  @include MQlite(xm) {
+    padding: 10px 15px;
+    margin: 20px auto 0;
+  }
 }
