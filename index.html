@@ -8,80 +8,86 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300i,400&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-  <header class="main_header" style="background: #ededed url('/img/header-bg.jpg') center no-repeat; background-size: cover;">
+  <header class="main_header" id="home" style="background: #ededed url('/img/header-bg.jpg') center no-repeat; background-size: cover;">
   <nav class="main_nav">
     <a href="#" class="logo">Logo</a>
     <ul class="main_menu">
       <li class="menu_item">
-        <a class="menu_link" href="#">Home</a>
+        <a class="menu_link" href="#home">Home</a>
       </li>
       <li class="menu_item">
-        <a class="menu_link" href="#">About</a>
+        <a class="menu_link" href="#about">About</a>
       </li>
       <li class="menu_item logo">
         <a class="menu_link" href="#">Logo</a>
       </li>
       <li class="menu_item">
-        <a class="menu_link" href="#">Skills</a>
+        <a class="menu_link" href="#skills">Skills</a>
       </li>
       <li class="menu_item">
-        <a class="menu_link" href="#">Portfolio</a>
+        <a class="menu_link" href="#portfolio">Portfolio</a>
       </li>
     </ul>
-    <div class="ham"></div>
+    <div class="hamburger">
+      <svg class="ham hamRotate" viewBox="0 0 100 100" width="50">
+        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+      </svg>
+    </div>
   </nav>
     <div class="text_wrap">
       <h1 class="main_title">I build it with passion</h1>
       <p class="subtitle_custom">Just to be clear, we do this for fun not for you, just kidding.</p>
-      <a class="btn_custom" href="#">Read more</a>
+      <a class="btn_custom" href="#skills">Read more</a>
     </div>
   </header>
 
-  <section class="section section_about" style="background: #131313 url('/img/about-bg.png') bottom no-repeat; background-size: contain;">
+  <section class="section section_skills" id="skills" style="background: #131313 url('/img/about-bg.png') bottom no-repeat; background-size: contain;">
     <div class="container">
-      <h2 class="title_custom light">About</h2>
+      <h2 class="title_custom light">My Skills</h2>
+      <p class="subtitle_custom">Lorem ipsum dolor sit amet.</p>
+      <div class="skills_wrap">
+        <div class="skills_block">
+          <h3 class="title_block">Lorem, ipsum dolor.</h3>
+          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
+        </div>
+        <div class="skills_block">
+          <h3 class="title_block">Lorem, ipsum dolor.</h3>
+          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
+        </div>
+        <div class="skills_block">
+          <h3 class="title_block">Lorem, ipsum dolor.</h3>
+          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
+        </div>
+        <div class="skills_block">
+          <h3 class="title_block">Lorem, ipsum dolor.</h3>
+          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section_about" id="about">
+    <div class="container">
+      <h2 class="title_custom">About</h2>
       <p class="subtitle_custom">Lorem ipsum dolor sit amet.</p>
       <div class="about_wrap">
         <div class="about_block">
-          <h3 class="title_block">Lorem, ipsum dolor.</h3>
-          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
-        </div>
-        <div class="about_block">
-          <h3 class="title_block">Lorem, ipsum dolor.</h3>
-          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
-        </div>
-        <div class="about_block">
-          <h3 class="title_block">Lorem, ipsum dolor.</h3>
-          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
-        </div>
-        <div class="about_block">
-          <h3 class="title_block">Lorem, ipsum dolor.</h3>
-          <p class="paragraph_custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur asperiores harum praesentium consectetur. Adipisci odit nisi praesentium quaerat eveniet?</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section_skills">
-    <div class="container">
-      <h2 class="title_custom">My Skills</h2>
-      <p class="subtitle_custom">Lorem ipsum dolor sit amet.</p>
-      <div class="skills_wrap">
-        <div class="skill_block">
           <div class="img_wrap">
             <img src="/img/html-5.png" alt="">
           </div>
           <h3 class="title_block dark">Lorem.</h3>
           <p class="paragraph_custom">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="skill_block">
+        <div class="about_block">
           <div class="img_wrap">
             <img src="/img/html-5.png" alt="">
           </div>
           <h3 class="title_block dark">Lorem.</h3>
           <p class="paragraph_custom">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="skill_block">
+        <div class="about_block">
           <div class="img_wrap">
             <img src="/img/html-5.png" alt="">
           </div>
@@ -92,39 +98,47 @@
     </div>
   </section>
 
-  <section class="section section_portfolio">
+  <section class="section section_portfolio" id="portfolio">
     <div class="container">
       <h2 class="title_custom light">Portfolio</h2>
       <p class="subtitle_custom">Lorem ipsum dolor sit amet.</p>
     </div>
-    <div class="portfolio_wrap">
+    <div class="portfolio_wrap grid">
       <div class="portfolio_block">
-        <img src="/img/portfolio-img.jpg" alt="">
-        <div class="overlay">
-          <h3 class="title_block">Tobacco Bountique</h3>
-          <a href="#" class="btn_custom">Review</a>
-        </div>
+        <a href="#">
+          <img src="/img/portfolio-img-1.jpg" alt="">
+          <span class="overlay">
+            <h3 class="title_block">Tobacco Bountique</h3>
+            <div class="btn_custom">Review</div>
+          </span>
+        </a>
       </div>
       <div class="portfolio_block">
-        <img src="/img/portfolio-img.jpg" alt="">
-        <div class="overlay">
-          <h3 class="title_block">Tobacco Bountique</h3>
-          <a href="#" class="btn_custom">Review</a>
-        </div>
+        <a href="#">
+          <img src="/img/portfolio-img-2.jpg" alt="">
+          <span class="overlay">
+            <h3 class="title_block">Fat of Switch</h3>
+            <div class="btn_custom">Review</div>
+          </span>
+        </a>
       </div>
       <div class="portfolio_block">
-        <img src="/img/portfolio-img.jpg" alt="">
-        <div class="overlay">
-          <h3 class="title_block">Tobacco Bountique</h3>
-          <a href="#" class="btn_custom">Review</a>
-        </div>
+        <a href="#">
+          <img src="/img/portfolio-img-3.jpg" alt="">
+          <span class="overlay">
+            <h3 class="title_block">PinkSlim</h3>
+            <div class="btn_custom">Review</div>
+          </span>
+        </a>
       </div>
       <div class="portfolio_block">
-        <img src="/img/portfolio-img.jpg" alt="">
-        <div class="overlay">
-          <h3 class="title_block">Tobacco Bountique</h3>
-          <a href="#" class="btn_custom">Review</a>
-        </div>
+        <a href="#">
+          <img src="/img/portfolio-img-4.jpg" alt="">
+          <span class="overlay">
+            <h3 class="title_block">Waking up thin</h3>
+            <div class="btn_custom">Review</div>
+          </span>
+        </a>
       </div>
     </div>
   </section>

@@ -4,9 +4,32 @@ $(document).ready(function() {
       $(this).removeClass("open");
     }
   });
+
+  $(document).click(function(event) {
+    if ($(event.target).closest(".hamburger").length) return;
+    $('.hamburger > svg').removeClass('active');
+    $('.body').removeClass('open');
+    event.stopPropagation();
+  });
   
-  $(".ham").click(function() {
+  $(".hamburger").click(function() {
+    $('.hamburger > svg').toggleClass('active');
     $(".body").toggleClass("open");
   });
+
+  $('.main_menu a').on('click', function(e) {
+    e.preventDefault();
+    $('.hamburger > svg').toggleClass('active');
+    $('.body').toggleClass('open');
+  });
+
+  var $page = $('html, body');
+  $('.main_menu a').click(function() {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    return false;
+  });
+
 });
 

@@ -72,6 +72,39 @@
   }
 }
 
+//animation for portfolio
+
+:root {
+  --offset: 1rem;
+}
+
+$offset: var(--offset);
+
+@mixin moveInGrid($cols, $n) {
+  $rows: ceil($n / $cols);
+  .grid {       
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: repeat($rows, 100% / $rows);
+    .portfolio_block:last-child:after,
+    .portfolio_block:last-child:before {
+      left: 100% * (($cols - $n) % $cols);
+      transform: translate3d(-100% * (($cols - 1) / 2), -100% * (($rows - 1) / 2), 0);
+    }
+    @for $i from 1 through $n - 1 {
+      $x: ($cols - $i) % $cols;
+      $y: $rows - floor(($i - 1) / $cols) - 1;
+      .portfolio_block:nth-child(#{$i}):hover ~ .portfolio_block:last-child:after,
+      .portfolio_block:nth-child(#{$i}):hover ~ .portfolio_block:last-child:before {
+        transform: translate3d(-$x*100%, -$y*100%, 0);   
+      }
+    }
+    .portfolio_block:last-child:hover:after,
+    .portfolio_block:last-child:hover:before {
+      transform: translate3d(-100% * (($cols - $n) % $cols), 0%, 0);  
+    }
+  }
+}
+
 // media
 
 // breakpoints
