@@ -346,12 +346,12 @@
     filter: grayscale(100%) blur(2px);
   }
 }
-@include moveInGrid(4, 4);
+@include moveInGrid(4, 5);
 @include MQlite(md) {
-  @include moveInGrid(3, 4);
+  @include moveInGrid(3, 5);
 }
 @include MQlite(xm) {
-  @include moveInGrid(2, 4);
+  @include moveInGrid(2, 5);
 }
 .overlay {
   position: absolute;
