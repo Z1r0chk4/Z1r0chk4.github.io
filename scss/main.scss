@@ -67,6 +67,9 @@
   position: relative;
   .logo {
     display: none;
+    img {
+      @include size(30px);
+    }
   }
   @include MQlite(xm) {
     @include flex(flex, space-between, center);
@@ -192,6 +195,11 @@
     background-color: $color-bg;
   }
   &:nth-child(2n - 1) {
+    text-align: right;
+    .title_block {
+      text-align: right;
+      margin-bottom: 5px;
+    }
     &:before {
       right: -147px;
       @include MQ(md) {
@@ -210,7 +218,10 @@
   }
   &:nth-child(2n) {
     margin-left: auto;
-    margin-top: -30px;
+    .title_block {
+      text-align: left;
+      margin-bottom: 5px;
+    }
     &:before {
       left: -147px;
       @include MQ(md) {
@@ -234,9 +245,9 @@
   }
   @include MQlite(sm) {
     width: calc(100% - 50px);
+    margin-top: 20px;
     &:nth-child(2n) {
       margin-left: 0;
-      margin-top: 20px;
     }
   }
   @include MQlite(sm) {
@@ -250,42 +261,11 @@
   padding-bottom: 100px;
 }
 .about_wrap {
-  @include flex(flex, space-between, flex-start);
-  flex-wrap: wrap;
-  margin-top: 50px;
-  @include MQlite(sm) {
-    justify-content: center;
-  }
-}
-.about_block {
-  &:nth-child(2n - 1) {
-    margin-top: 85px;
-  }
-  .img_wrap {
-    @include size(170px);
-    @include flex(flex, center, center);
-    background-color: $color-black;
+  max-width: 700px;
+  margin: 50px auto 0;
+  .paragraph_custom {
     text-align: center;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    img {
-      @include size(100px);
-    }
-  }
-  @include MQlite(sm) {
-    width: 50%;
-    margin-bottom: 20px;
-    &:nth-child(2n - 1) {
-      margin-top: 0;
-    }
-  }
-  @include MQlite(xm) {
-    .img_wrap {
-      @include size(100px);
-      img {
-        @include size(70px);
-      }
-    }
+    color: $color-black;
   }
 }
 
@@ -366,9 +346,19 @@
   opacity: 0;
   transform: translate3d(-50%, -50%, 0);
   transition: .3s 0s;
+  min-height: 80px;
   .btn_custom {
     border-color: $color-white;
     color: $color-white;
+  }
+  @include MQlite(sm) {
+    .title_block {
+      font-size: 17px;
+    }
+    .btn_custom {
+      width: max-content;
+      margin: 10px auto 0;
+    }
   }
 }
 .portfolio_block:hover .overlay {
@@ -379,6 +369,6 @@
 //footer
 
 .main_footer {
-  padding: 100px 0 50px;
+  padding: 50px 0;
   text-align: center;
 }
