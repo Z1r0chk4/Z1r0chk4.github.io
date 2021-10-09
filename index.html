@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I am frontend developer</title>
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=PYqGopJ0mz">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=PYqGopJ0mz">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=PYqGopJ0mz">
-  <link rel="manifest" href="/favicon/site.webmanifest?v=PYqGopJ0mz">
-  <link rel="shortcut icon" href="/favicon/favicon.ico?v=PYqGopJ0mz">
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=PYqGopJ0mz">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="stylesheet" href="/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300i,400&display=swap" rel="stylesheet">
-</head>
-<body class="body">
-  <header class="main_header" id="home" style="background: #ededed url('/img/header-bg.jpg') center no-repeat; background-size: cover;">
-  <nav class="main_nav">
-    <a href="#home" class="logo">
-      <img src="/img/logo.svg" alt="">
-    </a>
-    <ul class="main_menu">
-      <li class="menu_item">
-        <a class="menu_link" href="#home">Home</a>
-      </li>
-      <li class="menu_item">
-        <a class="menu_link" href="#about">About</a>
-      </li>
-      <li class="menu_item logo">
-        <a class="menu_link" href="#home">
-          <img src="/img/logo.svg" alt="">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300i,400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=PYqGopJ0mz">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=PYqGopJ0mz">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=PYqGopJ0mz">
+    <link rel="manifest" href="/favicon/site.webmanifest?v=PYqGopJ0mz">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=PYqGopJ0mz">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=PYqGopJ0mz">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <!-- BEGIN header -->
+    <header class="header" id="home" style="background: #ededed url('/img/header-bg.jpg') center no-repeat; background-size: cover;">
+      <nav class="header__nav">
+        <a href="#home" class="header__logo">
+          <img src="/icons/logo.svg" alt="">
         </a>
-      </li>
-      <li class="menu_item">
-        <a class="menu_link" href="#skills">Skills</a>
-      </li>
-      <li class="menu_item">
-        <a class="menu_link" href="#portfolio">Portfolio</a>
-      </li>
+        <!-- <ul class="menu">
+      
+      
+        <li class="menu__item">
+          <a class="menu__link" href="#Home">Home</a>
+        </li>
+      
+        <li class="menu__item">
+          <a class="menu__link" href="#About">About</a>
+        </li>
+      
+        <li class="menu__item">
+          <a class="menu__link" href="#Skills">Skills</a>
+        </li>
+      
+        <li class="menu__item">
+          <a class="menu__link" href="#Portfolio">Portfolio</a>
+        </li>
+      
     </ul>
     <div class="hamburger">
       <svg class="ham hamRotate" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" width="50">
@@ -48,150 +51,111 @@
         <path class="line middle" d="m 30,50 h 40" />
         <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
       </svg>
-    </div>
-  </nav>
-    <div class="text_wrap">
-      <h1 class="main_title">I build it with passion</h1>
-      <p class="subtitle_custom">I code beautifully simple things, and I love what I do</p>
-      <a class="btn_custom" href="#skills">Read more</a>
-    </div>
-  </header>
-
-  <section class="section section_skills" id="skills" style="background: #131313 url('/img/about-bg.png') bottom no-repeat; background-size: contain;">
-    <div class="container">
-      <h2 class="title_custom light">My Skills</h2>
-      <p class="subtitle_custom">Skills in frontend develop</p>
-      <div class="skills_wrap">
+    </div> -->
+      </nav>
+      <div class="header__wrap">
+        <h1 class="header__title">I build it with passion</h1>
+        <!-- <p class="header__subtitle subtitle">I code beautifully simple things, and I love what I do</p> -->
+        <a class="header__btn btn-custom" id="header-button">Read more</a>
+      </div>
+    </header>
+    <!-- END header -->
+    <!-- BEGIN portfolio -->
+    <section class="section section-portfolio" id="portfolio" style="background: #131313 url('/img/about-bg.png') bottom no-repeat; background-size: contain;">
+      <div class="container">
+        <h2 class="title light">Portfolio</h2>
+        <p class="subtitle">Here are some projects I've worked on</p>
+        <div class="section-portfolio__wrap">
+          <div class="portfolio">
+            <div class="portfolio__name">
+              <h3 class="portfolio__title">Beyond hill</h3>
+            </div>
+            <div class="portfolio__content" id="aniimated-thumbnials">
+              <div class="portfolio__images">
+                <a class="portfolio__link" data-fslightbox href="/img/portfolio/portfolio-1.png">
+                  <img class="portfolio__img" src="/img/portfolio/portfolio-1.png" />
+                  <img class="portfolio__icon" src="/icons/eye-icon.png" alt="">
+                </a>
+                <a class="portfolio__link" data-fslightbox href="/img/portfolio/portfolio-2.png">
+                  <img class="portfolio__img" src="/img/portfolio/portfolio-2.png" />
+                  <img class="portfolio__icon" src="/icons/eye-icon.png" alt="">
+                </a>
+                <a class="portfolio__link" data-fslightbox data-class="fslightbox-source" href="/video/portfolio-1.mp4">
+                  <img class="portfolio__img" src="/img/portfolio/video-preview.png" />
+                  <img class="portfolio__icon" src="/icons/play-icon.png" alt="">
+                </a>
+              </div>
+              <a href="https://drive.google.com/file/d/1AkbuloexlDrONt3vUFtyHrv0URfVXRjQ/view?usp=sharing" target="_blank" class="portfolio__download"> Google Drive </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END portfolio -->
+    <!-- BEGIN content -->
+    <!-- 	
+		<section class="section section_skills" id="skills" style="background: #131313 url('/img/about-bg.png') bottom no-repeat; background-size: contain;">
+  <div class="container">
+    <h2 class="title_custom light">My Skills</h2>
+    <p class="subtitle_custom">Skills in frontend develop</p>
+    <div class="skills_wrap">
+      
+      
         <div class="skills_block">
           <h3 class="title_block">HTML</h3>
           <p class="paragraph_custom">More than 2 years of experience as an HTML coder</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">CSS</h3>
           <p class="paragraph_custom">Pre-Processors: SCSS / SASS / LESS</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">Adaptive layout</h3>
           <p class="paragraph_custom">High-quality cross-browser adaptive layout</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">Knowledge of graphics software</h3>
           <p class="paragraph_custom">Photoshop, Figma</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">JavaScript</h3>
           <p class="paragraph_custom">More than 1 years of experience in JavaScript</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">CSS frameworks</h3>
           <p class="paragraph_custom">Bootstrap 3/4</p>
         </div>
+      
         <div class="skills_block">
           <h3 class="title_block">Animations</h3>
           <p class="paragraph_custom">Animations: css / javascript</p>
         </div>
-      </div>
+      
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section section_about" id="about">
-    <div class="container">
-      <h2 class="title_custom">About</h2>
-      <p class="subtitle_custom">I'm frontend developer</p>
-      <div class="about_wrap">
-          <p class="paragraph_custom">Hello, my name is Olha and I from Ukraine. My passion is a creating websites. I am working frontend developer more than 2 years. I help people realize their site ideas. I know how to create website to run across devices using the latest technologies available. My layouts will work on any devices.</p>
-      </div>
-    </div>
-  </section>
+	
+	
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
 
-  <section class="section section_portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="title_custom light">Portfolio</h2>
-      <p class="subtitle_custom">Here are some projects I've worked on</p>
-    </div>
-    <div class="portfolio_wrap grid">
-      <div class="portfolio_block">
-        <a href="/portfolio/tobacco-bountique/index.html">
-          <img src="/img/portfolio-img-1.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Tobacco Bountique</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/fat-of-switch/index.html">
-          <img src="/img/portfolio-img-2.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Fat of Switch</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/pinkslim/index.html">
-          <img src="/img/portfolio-img-3.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">PinkSlim</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/waking-up-thin/index.html">
-          <img src="/img/portfolio-img-4.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Waking up thin</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/new-providence/index.html">
-          <img src="/img/portfolio-img-5.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">New Providence</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/take/index.html">
-          <img src="/img/portfolio-img-6.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Take</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/bolgaria/index.html">
-          <img src="/img/portfolio-img-7.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Bolgaria</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-      <div class="portfolio_block">
-        <a href="/portfolio/simple-marketing/index.html">
-          <img src="/img/portfolio-img-8.jpg" alt="">
-          <span class="overlay">
-            <h3 class="title_block">Simple Markiting</h3>
-            <div class="btn_custom">Review</div>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <footer class="main_footer">
-    <div class="container">
-      <p class="paragraph_custom">Copyright &copy; Olha Korviakova. All rights reserved.</p>
-    </div>
-  </footer>
-
-<script src="/js/jquery.min.js"></script>
-<script src="/js/main.js"></script>
-</body>
+ -->
+    <!-- END content -->
+    <!-- BEGIN footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__paragraph">Copyright &copy; Olha Korviakova. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- END footer -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
 </html>
